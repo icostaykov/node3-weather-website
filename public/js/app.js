@@ -1,16 +1,3 @@
-console.log("JS is loaded")
-
-fetch('http://localhost:3000/weather?address=Boston').then((response) => {
-    response.json().then((data) => {
-        if (data.error) {
-            console.log(error)
-        }
-        else{
-            console.log(data.forecast + ' at ' + data.location)
-        }
-    })
-})
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.getElementById('messageOne')
